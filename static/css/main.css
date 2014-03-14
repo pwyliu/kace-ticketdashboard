@@ -1,0 +1,29 @@
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.contentcontainer {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.header {
+    font-weight: 300;
+    font-size: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.updated {
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 80;
+}
+
+.tablecontainer {
+    padding-bottom: 1em;
+}
