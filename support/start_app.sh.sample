@@ -1,0 +1,19 @@
+#!/bin/bash
+set -e
+
+VENV=venv/bin/activate
+APPPATH=/opt/kace-ticketdashboard
+
+LOGFILE=${APPPATH}/gunicorn.log
+LOGLEVEL=warning
+
+PORT=8002
+NUM_WORKERS=2
+
+APPMODULE=kace-ticketdash
+APPVAR=app
+
+cd ${APPPATH}
+source ${VENV}
+
+exec gunicorn -b 127.0.0.1:${PORT} -w ${NUM_WORKERS} --log-level=${LOGLEVEL} --log-file=${LOGFILE} 2>>${LOGFILE} ${APPMODULE}:${APPVAR}

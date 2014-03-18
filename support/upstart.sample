@@ -1,0 +1,9 @@
+#!upstart
+description "KACE Ticket Dashboard"
+start on started networking
+stop on shutdown
+
+respawn
+respawn limit 10 5
+
+exec /opt/kace-ticketdashboard/start_app.sh
