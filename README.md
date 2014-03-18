@@ -3,7 +3,7 @@ A simple dashboard for the KACE K1000 service desk. Shows open/stalled tickets.
 
 Flask, jquery and pure.css. Sorry about the blurring in the screenshot, it's real tickets.
 
-[![screenshot](https://raw.github.com/pwyliu/kace-ticketdashboard/master/support/screenshot.png)]
+![screenshot](https://raw.github.com/pwyliu/kace-ticketdashboard/master/support/screenshot.png)
 
 ## Installing
 The dashboard is just a simple Flask application. Clone the project, install
