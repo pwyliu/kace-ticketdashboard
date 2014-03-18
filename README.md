@@ -33,7 +33,7 @@ You can use the built in webserver for dev, but in real life you should use a
 gunicorn + nginx stack. It's really easy, [see here](http://flask.pocoo.org/docs/deploying/wsgi-standalone/)
 for more details.
 
-There are example upstart, nginx and gunicorn starting scripts in the
+There are example upstart and nginx confs in the
 [support](https://github.com/pwyliu/kace-ticketdashboard/tree/master/support) folder.
 
 Gunicorn is included in requirements.txt.
