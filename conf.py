@@ -49,15 +49,19 @@ order by OWNER_NAME, HD_PRIORITY.ORDINAL, HD_CATEGORY.ORDINAL, HD_STATUS.ORDINAL
 # E.g: TEAMS = []
 # TEAM1 = {
 #     'name': "Command Team",
-#     'members': ["sisko", "kira", "odo"]
+#     'members': ["sisko", "kira", "worf"]
 # }
 # TEAM2 = {
 #     'name': "Ops Team",
-#     'members': ["worf", "obrien", "garak"]
+#     'members': ["nog", "obrien", "odo"]
 # }
 # TEAM3 = {
 #     'name': "Science Team",
 #     'members': ["bashir", "dax", "ezridax"]
 # }
-# TEAMS = [TEAM1, TEAM2, TEAM3]
+# TEAM4 = {
+#     'name': "Promenade Team",
+#     'members': ["garak", "quark", "rom"]
+# }
+# TEAMS = [TEAM1, TEAM2, TEAM3, TEAM4]
 TEAMS = []
