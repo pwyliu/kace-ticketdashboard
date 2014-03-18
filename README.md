@@ -24,7 +24,7 @@ pip install -r requirements.txt
 #Now edit conf.py to set your Kace DB settings and set up teams if you want to use them
 vim conf.py
 
-#Then start up app to see if it runs. For real deployment, see next section.
+#Start up the app to see if it runs. For real deployment, see next section.
 python kace-ticketdash.py
 ```
 
@@ -33,7 +33,7 @@ You can use the built in webserver for dev, but in real life you should use a
 gunicorn + nginx stack. It's really easy, [see here](http://flask.pocoo.org/docs/deploying/wsgi-standalone/)
 for more details.
 
-There are some example upstart, nginx and a gunicorn starting script in the
+There are example upstart, nginx and gunicorn starting scripts in the
 [support](https://github.com/pwyliu/kace-ticketdashboard/tree/master/support) folder.
 
 Gunicorn is included in requirements.txt.
