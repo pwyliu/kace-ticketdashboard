@@ -6,7 +6,7 @@ from flask import Flask, jsonify, render_template
 from werkzeug.contrib.fixers import ProxyFix
 
 app = Flask(__name__)
-app.debug = False
+app.debug = True
 app.wsgi_app = ProxyFix(app.wsgi_app)
 
 
@@ -49,6 +49,7 @@ def get_tickets():
             'status': 'ok',
             'teams': conf.TEAMS,
             'results': tickets,
+            'server': conf.DB_SERVER,
             'timestamp': datetime.datetime.now()
         }
         return jsonify(payload)
