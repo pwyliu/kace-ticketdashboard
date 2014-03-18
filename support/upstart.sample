@@ -6,4 +6,21 @@ stop on shutdown
 respawn
 respawn limit 10 5
 
-exec /opt/kace-ticketdashboard/start_app.sh
+console log
+
+script
+  APPPATH="/opt/kace-ticketdashboard"
+  GUNICORNPATH="venv/bin/"
+
+  LOGFILE="$APPPATH/gunicorn.log"
+  LOGLEVEL="warning"
+
+  PORT="8002"
+  NUM_WORKERS="2"
+
+  APPMODULE="kace-ticketdash"
+  APPVAR="app"
+
+  cd ${APPPATH}
+  ${GUNICORNPATH}/gunicorn -b 127.0.0.1:${PORT} -w ${NUM_WORKERS} --log-level=${LOGLEVEL} ${APPMODULE}:${APPVAR}
+end script
